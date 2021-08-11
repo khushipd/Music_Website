@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
+    <title>Love Tunes</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="heading">Music Gallery</div>
+    <div class="music-container">
+        <div class="box">
+            <div class="image">
+                <img src="Images/ali thumkat.jpeg " alt="">
+            </div>
+            <div class="music">
+                <audio src="music1.mp3" controls></audio>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="3.png" alt="">
+            </div>
+            <div class="music">
+                <audio src="music2.mp3" controls></audio>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+</script>
+</body>
+</html>

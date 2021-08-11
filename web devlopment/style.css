@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  overflow-x: hidden;
+
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.logo{
+    margin: 0%;
+    padding: 0%;
+    text-align: left;
+    color: #ebc90e;
+    font-family: 'Caveat', cursive;
+
+
+}
+
+/* #grad {
+  height: 80px;
+  background-color: rgb(255, 188, 64); 
+  background-image: linear-gradient(to right, red , yellow);
+} */
+
+
+/* .navbar-toggle .icon-bar {
+  background-color: rgb(250, 248, 248);
+  color: #ebc90e;
+
+
+} */
+
+.navbar .navbar-brand{
+      font-size: 50px;
+      color: #ebc90e;
+      font-family: 'Caveat', cursive;
+
+
+}
+nav .navbar-nav li a{
+  color: rgb(255, 254, 254);
+  align-items: left;
+  font-size: 20px;
+}
+
+nav .navbar-nav li a:hover{
+  background-color:transparent;
+  color:#ebc90e;
+}
+
+/* nav .navbar-nav li a:active{
+  background-color:transparent;
+  color:rgb(84, 30, 209);
+} */
+/* .navbar-nav > .active > a { 
+  color: blue ; 
+  background-color: transparent;
+}  */
+
+/* .nav-item{
+  color: rgb(250, 248, 248);
+
+
+}
+
+.nav-link > a:hover{
+  color: green;
+  background-color: transparent;
+
+
+}
+
+.navbar-nav > .active >a{
+  background-color: transparent;
+  color: #ebc90e;
+
+
+} */
+ /*.topnav {
+  overflow: hidden;
+  background-color: #2b2a2a;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgba(255, 188, 64,0.9);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(255, 188, 64,0.6);
+  color: rgb(5, 5, 5);
+}
+
+.topnav a.active {
+  background-color: #c3c7ca;
+  color: rgb(255, 255, 255);
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-left: 700px;
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    border: none;
+  }
+}   */
+
+.tagline{
+   text-align: center;
+   justify-content: center;
+   height: 600px;
+   color: #ffffff;
+
+   
+}
+
+.main{
+  background-image: url(bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 700px;
+
+  
+}
+
+.popup .login-page {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-150%) scale(0); 
+  text-align: center;
+  display: flex;
+  z-index: 1;
+
+
+ }
+
+.login_button {
+  background-color:rgba(255, 188, 64,0.9);
+  border-radius: 25px;
+  margin-top: 10px;
+  font-size: 20px;
+  float: right;
+
+
+  }
+
+.login_button:active {  
+/* background: linear-gradient(145deg, #222222, #292929);
+box-shadow:  5px 5px 10px #262626, 
+    -5px -5px 10px #262626; */
+border: none;
+z-index: 1;
+
+
+}  
+
+/* Popup active */
+.popup.active .login-page {
+transition: all 300ms ease-in-out;
+transform: translate(-50%,-38%) scale(1);
+z-index: 1;  
+position: absolute;
+
+
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  border-radius: 50%;
+  background: rgb(170, 11, 11);
+  padding: 7px;
+
+
+  }
+
+.login-page{
+    width:360px;
+    padding:7% 0 0;
+    margin:auto;
+    z-index: 1;
+    position: absolute;
+    border:tomato;
+
+}
+
+.form{
+    position:relative;
+    z-index: 1;
+    background:rgba(5, 5, 5, 0.8);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding:45px;
+    text-align: center;
+    border-radius: 15px 70px;
+    
+
+}
+
+.form input{
+    font-family:"Roboto", sans-serif;
+    outline:1;
+    background: #f2f2f2;
+    width:100%;
+    border:0;
+    margin: 0 0 15px;
+    padding:15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    z-index: 1;
+
+
+}
+
+.form button{
+    font-family:"Roboto", sans-serif;
+    text-transform: uppercase;
+    outline:0;
+    background: #2b2a2a;
+    width:100%;
+    border:0;
+    padding:15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    z-index: 1;
+
+    
+} 
+
+.form button:hover,.form button:active{
+    background: #444343;
+
+    
+}
+
+.form .message a{ color:#ffffff;
+    text-decoration: none;
+
+
+}
+
+.form .Register-Form {
+    display: none;
+
+
+}
+
+/* body, html {
+  height: 100%;
+}
+.bg {
+  background-image: url("lite kaale wale.png");
+  height: 100%;
+  float:top;
+  background-position: right;
+  background-repeat: no-repeat;
+} */
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  margin-top: 5%;
+
+
+}
+
+.mySlides {
+	display: none
+}
+ 
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(255, 188, 64,0.9);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+
+}
+
+.active, .dot:hover{
+  background-color: #717171;
+
+
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+
+
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+
+
+}
